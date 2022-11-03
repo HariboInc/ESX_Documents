@@ -1,8 +1,23 @@
-fx_version 'adamant '
+fx_version 'cerulean'
 game 'gta5'
 
-ui_page 'html/form.html'
+shared_script "@es_extended/imports.lua"
+client_scripts {
+	'config.lua',
+	'@es_extended/locale.lua',
+	'locales/*.lua',
+	'client.lua',
+}
 
+server_scripts {
+	'config.lua',
+	'@mysql-async/lib/MySQL.lua',
+	'@es_extended/locale.lua',
+	'locales/*.lua',
+	'server.lua',
+}
+
+ui_page 'html/form.html'
 files {
 	'html/form.html',
 	'html/img/seal.png',
@@ -17,28 +32,4 @@ files {
 	'html/language_fr.js',
 	'html/script.js',
 	'html/jquery-3.4.1.min.js',
-}
-
-server_scripts {
-	'config.lua',
-	'@mysql-async/lib/MySQL.lua',
-	'@es_extended/locale.lua',
-	'locales/gr.lua',
-	'locales/en.lua',
-	'locales/br.lua',
-	'locales/de.lua',
-	'locales/fr.lua',
-	'server.lua',
-}
-
-client_scripts {
-	'config.lua',
-	'@es_extended/locale.lua',
-	'locales/gr.lua',
-	'locales/en.lua',
-	'locales/br.lua',
-	'locales/de.lua',
-	'locales/fr.lua',
-	'GUI.lua',
-	'client.lua',
 }
