@@ -18,7 +18,6 @@ function OpenMainMenu()
     }
 
     ESX.OpenContext("right", elements, function(menu,element)
-        Menu.hidden = false
         if element.value == "public_docs" then
             OpenNewPublicFormMenu()
         elseif element.value == "job_docs" then
