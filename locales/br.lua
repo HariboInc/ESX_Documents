@@ -16,6 +16,8 @@ Locales['br'] = {
     ['give_copy'] = "Dar cópia",
     ['delete_bt'] = "Excluir",
     ['yes_delete'] = "Sim Excluir",
+    ['documents'] = "Documents",
+    ['nearest_players'] = "Nearest Players",
 }
 
 Config.Documents['br'] = {

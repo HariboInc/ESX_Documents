@@ -16,6 +16,8 @@ Locales['de'] = {
     ['give_copy'] = "Gebe Kopie",
     ['delete_bt'] = "Lösche",
     ['yes_delete'] = "Ja Löschen",
+    ['documents'] = "Documents",
+    ['nearest_players'] = "Nearest Players",
 }
 
 Config.Documents['de'] = {

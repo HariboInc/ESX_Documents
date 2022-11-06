@@ -11,7 +11,7 @@ end)
 
 function OpenMainMenu()
     local elements = {
-        {unselectable = true, icon = "fas fa-scroll", title = "Documents"},
+        {unselectable = true, icon = "fas fa-scroll", title = _U('documents')},
         {icon = "fas fa-scroll", title = _U('public_documents'), value = "public_docs"},
         {icon = "fas fa-scroll", title = _U('job_documents'), value = "job_docs"},
         {icon = "fas fa-scroll", title = _U('saved_documents'), value = "saved_docs"}
@@ -36,7 +36,7 @@ end
 
 function ShowToNearestPlayers(aDocument,curDoc)
     local elements  = {
-        {unselectable = true, icon = "fas fa-users", title = "Nearest Players"}
+        {unselectable = true, icon = "fas fa-users", title = _U('nearest_players')}
     }
 
     local players_clean = GetNeareastPlayers()
@@ -58,7 +58,7 @@ end
 
 function CopyToNearestPlayers(aDocument,curDoc)
     local elements  = {
-        {unselectable = true, icon = "fas fa-users", title = "Nearest Players"}
+        {unselectable = true, icon = "fas fa-users", title = _U('nearest_players')}
     }
 
     local players_clean = GetNeareastPlayers()
@@ -80,7 +80,7 @@ end
 
 function OpenNewPublicFormMenu()
     local elements = {
-        {unselectable = true, icon = "fas fa-scroll", title = "Public Forms"}
+        {unselectable = true, icon = "fas fa-scroll", title = _U('public_documents')}
     }
     for i=1, #DOCUMENT_FORMS["public"], 1 do
         elements[#elements+1] = {
@@ -107,7 +107,7 @@ end
 
 function OpenNewJobFormMenu()
     local elements = {
-        {unselectable = true, icon = "fas fa-scroll", title = "Job Forms"}
+        {unselectable = true, icon = "fas fa-scroll", title = _U('job_documents')}
     }
 
     if DOCUMENT_FORMS[ESX.PlayerData.job.name] ~= nil then
@@ -137,7 +137,7 @@ end
 
 function OpenMyDocumentsMenu()
     local elements = {
-        {unselectable = true, icon = "fas fa-scroll", title = "Saved Documents"}
+        {unselectable = true, icon = "fas fa-scroll", title = _U('saved_documents')}
     }
 
     for i=#USER_DOCUMENTS, 1, -1 do
